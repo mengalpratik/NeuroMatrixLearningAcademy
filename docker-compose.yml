@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  academy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: neuromatrix-academy:latest
+    container_name: neuromatrix-academy
+    restart: unless-stopped
+    ports:
+      - "${ACADEMY_HOST_PORT:-18080}:8000"
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:////app/data/neuromatrix_academy.db
+      - API_V1_STR=/api
+      - PROJECT_NAME=NeuroMatrix Learning Academy
+      - DEFAULT_USER_ID=learner-prime
+      - CORS_ORIGINS=["http://localhost:5173","http://127.0.0.1:5173","http://localhost:8000","http://127.0.0.1:8000","http://localhost:18080","http://127.0.0.1:18080","http://92.4.73.160:18080"]
+    volumes:
+      - academy_data:/app/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://127.0.0.1:8000/api/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  academy_data:
+    name: neuromatrix_academy_data

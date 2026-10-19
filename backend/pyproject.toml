@@ -2,7 +2,7 @@
 name = "neuromatrix-academy-backend"
 version = "1.0.0"
 description = "NeuroMatrix Learning Academy API & 112-Day Curriculum Engine"
-authors = [{ name = "NeuroMatrix Engineering", email = "engineering@neuromatrix.local" }]
+authors = [{ name = "Pratik Mengal", email = "118087944+mengalpratik@users.noreply.github.com" }]
 dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.30.0",

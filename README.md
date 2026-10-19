@@ -88,6 +88,22 @@ Open your browser to:
 - **Vite Client**: [http://localhost:5173](http://localhost:5173)
 - **FastAPI API**: [http://localhost:8000](http://localhost:8000)
 
+### 3. Docker Deployment
+
+To build and run the containerized production stack using Docker and Docker Compose:
+
+```bash
+# Copy example environment configuration
+cp .env.example .env
+
+# Build and start container (binds to port 18080 by default, customizable via ACADEMY_HOST_PORT)
+docker compose up -d --build
+
+# Verify container health and status
+docker compose ps
+curl http://localhost:18080/api/health
+```
+
 ---
 
 ## Running Quality Checks & Tests
@@ -133,3 +149,12 @@ Detailed syllabus: [docs/CURRICULUM.md](docs/CURRICULUM.md).
 - [Developer Guide](docs/DEVELOPMENT_GUIDE.md)
 - [Testing & Quality Assurance Guide](docs/TESTING.md)
 - [Project Progress & Verification Log](PROJECT_PROGRESS.md)
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+
+Copyright (c) 2026 Pratik Mengal.
+
