@@ -80,6 +80,7 @@ tests/test_quiz_exercise.py::test_practice_lab_and_milestones PASSED     [100%]
 
 ## 3. Launch Commands
 
+### Local Launch Runner
 ```bash
 # Production Mode (Single port 8000 for UI + API)
 ./start.sh
@@ -88,8 +89,31 @@ tests/test_quiz_exercise.py::test_practice_lab_and_milestones PASSED     [100%]
 ./start.sh dev
 ```
 
+### Docker Containerized Deployment
+```bash
+# Build and start container on port 18080 (configurable via ACADEMY_HOST_PORT)
+docker compose up -d --build
+
+# Verify container health
+docker compose ps
+curl http://localhost:18080/api/health
+```
+
 ---
 
-## 4. Known Limitations & Future Roadmap
+## 4. GitHub Publication & VM01 Deployment Verification
+
+- **GitHub Repository**: [https://github.com/mengalpratik/NeuroMatrixLearningAcademy](https://github.com/mengalpratik/NeuroMatrixLearningAcademy) (Public, MIT License, Copyright 2026 Pratik Mengal)
+- **Deployment Target**: VM01 (`/opt/neuromatrix-academy`)
+- **Container Name**: `neuromatrix-academy`
+- **Host Port Binding**: `18080:8000` (verified free prior to assignment)
+- **Healthcheck**: Verified passing (`status: healthy`, `database: connected`)
+- **Data Persistence**: Verified across container restarts via named volume `neuromatrix_academy_data`
+- **Safety**: Existing services (`sanu-telegram` on Docker, `neuro-node` on port 8787, `bot.py` on port 8800) verified active, responding, and completely undisturbed
+
+---
+
+## 5. Known Limitations & Future Roadmap
 1. **Isolated Code Execution Sandbox**: In the current MVP, code execution is manual (learners run Python locally and record outputs in the verification logger to prevent server-side arbitrary code execution). Future expansion may introduce an isolated containerized Docker/gVisor runner for automated server-side execution.
 2. **Multi-User Authentication**: The MVP runs in single-user local mode (`learner-prime`). Multi-tenant database migrations to PostgreSQL with user signups are supported by the existing schema.
+
