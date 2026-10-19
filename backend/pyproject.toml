@@ -6,7 +6,8 @@ authors = [{ name = "Pratik Mengal", email = "118087944+mengalpratik@users.norep
 dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.30.0",
-    "sqlalchemy>=2.0.0",
+    "sqlalchemy[asyncio]>=2.0.0",
+    "greenlet>=3.0.0",
     "pydantic>=2.7.0",
     "pydantic-settings>=2.2.0",
     "aiosqlite>=0.20.0",
