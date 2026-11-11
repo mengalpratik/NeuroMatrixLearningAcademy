@@ -6,6 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3b82f6?style=flat-square&logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-10b981?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Tests](https://img.shields.io/badge/Tests-12%20Passed-10b981?style=flat-square)](docs/TESTING.md)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/pratikmengal)
 
 A professional, full-stack learning platform designed to organize, deliver, and track a **112-day Python full-stack engineering roadmap**. Built with a cybersecurity-inspired dark design system, the academy allows learners to jump directly to any day, study deep conceptual explanations, run code exercises, take quizzes, complete milestone engineering projects, and persist all progress across application restarts.
 
@@ -149,6 +150,16 @@ Detailed syllabus: [docs/CURRICULUM.md](docs/CURRICULUM.md).
 - [Developer Guide](docs/DEVELOPMENT_GUIDE.md)
 - [Testing & Quality Assurance Guide](docs/TESTING.md)
 - [Project Progress & Verification Log](PROJECT_PROGRESS.md)
+
+---
+
+## ☕ Support the Academy
+
+If you find this 112-day engineering curriculum and platform valuable, consider supporting continued curriculum development:
+
+<a href="https://buymeacoffee.com/pratikmengal" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="42" width="180">
+</a>
 
 ---
 
