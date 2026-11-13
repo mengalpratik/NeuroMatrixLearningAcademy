@@ -7,6 +7,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-10b981?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Tests](https://img.shields.io/badge/Tests-12%20Passed-10b981?style=flat-square)](docs/TESTING.md)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/pratikmengal)
+[![UPI](https://img.shields.io/badge/UPI-iampratikmengal--2%40okaxis-008080?style=flat-square&logo=google-pay&logoColor=white)](upi://pay?pa=iampratikmengal-2@okaxis&pn=Pratik%20Mengal&cu=INR)
 
 A professional, full-stack learning platform designed to organize, deliver, and track a **112-day Python full-stack engineering roadmap**. Built with a cybersecurity-inspired dark design system, the academy allows learners to jump directly to any day, study deep conceptual explanations, run code exercises, take quizzes, complete milestone engineering projects, and persist all progress across application restarts.
 
@@ -155,11 +156,22 @@ Detailed syllabus: [docs/CURRICULUM.md](docs/CURRICULUM.md).
 
 ## ☕ Support the Academy
 
-If you find this 112-day engineering curriculum and platform valuable, consider supporting continued curriculum development:
+If you find this 112-day engineering curriculum and platform valuable, consider supporting continued curriculum development via Buy Me a Coffee or UPI:
 
 <a href="https://buymeacoffee.com/pratikmengal" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="42" width="180">
 </a>
+&nbsp;&nbsp;
+<a href="upi://pay?pa=iampratikmengal-2@okaxis&pn=Pratik%20Mengal&cu=INR">
+  <img src="https://img.shields.io/badge/UPI-iampratikmengal--2%40okaxis-008080?style=for-the-badge&logo=google-pay&logoColor=white" height="40" alt="Pay via UPI" />
+</a>
+
+<details>
+  <summary><b>🇮🇳 Scan to Pay via UPI (GPay / PhonePe / Paytm / BHIM)</b></summary>
+  <br/>
+  <img src="https://raw.githubusercontent.com/mengalpratik/mengalpratik/main/assets/upi-qr.png" alt="Pratik Mengal UPI QR Code" width="220" style="border-radius: 12px; border: 1px solid rgba(128,128,128,0.2);" />
+  <p><code>iampratikmengal-2@okaxis</code></p>
+</details>
 
 ---
 
